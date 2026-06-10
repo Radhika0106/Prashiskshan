@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts */
+  --font-serif: var(--font-instrument), serif;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  /* Basic Colors */
+  --color-page-bg: #FFFFFF;
+  --color-page-alt: #F7F6F3;
+  --color-border-main: #E5E5E5;
+  --color-border-hover: #AAAAAA;
+  
+  --color-text-primary: #111111;
+  --color-text-secondary: #666666;
+  --color-accent: #1A1A1A;
+  
+  /* Pastels */
+  --color-status-success-bg: #D1FAE5;
+  --color-status-success-text: #065F46;
+  --color-status-info-bg: #DBEAFE;
+  --color-status-info-text: #1E3A8A;
+  --color-status-warning-bg: #FEF9C3;
+  --color-status-warning-text: #854D0E;
+  --color-status-neutral-bg: #F3F4F6;
+  --color-status-neutral-text: #374151;
+
+  /* Radii */
+  --radius-card: 12px;
+  --radius-ui: 8px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-page-bg);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .hairline-b {
+    border-bottom: 1px solid var(--color-border-main);
+  }
+  .hairline-t {
+    border-top: 1px solid var(--color-border-main);
+  }
+  .hairline-r {
+    border-right: 1px solid var(--color-border-main);
+  }
+  .hairline {
+    border: 1px solid var(--color-border-main);
+  }
+}
